@@ -11,7 +11,7 @@ const ChatInterface = ({ language, onLanguageChange }) => {
   const messagesEndRef = useRef(null);
   const chatContainerRef = useRef(null);
 
-  // Check server connection on mount
+  //server connection
   useEffect(() => {
     checkServerConnection();
   }, []);
@@ -44,8 +44,8 @@ const ChatInterface = ({ language, onLanguageChange }) => {
 
     if (!data.context || data.context.length === 0) {
       return language === 'am' 
-        ? 'ምንም አግባብነት ያለው ዜና አልተገኘም።' 
-        : 'No relevant news found.';
+        ? 'ይቅርታ, ምንም አግባብነት ያለው ዜና አልተገኘም።' 
+        : 'Sorry, No relevant news found.';
     }
 
     // Group articles by language
@@ -56,7 +56,7 @@ const ChatInterface = ({ language, onLanguageChange }) => {
 
     // Add Amharic news
     if (amharicNews.length > 0) {
-      newsItems.push(language === 'am' ? '📰 የአማርኛ ዜናዎች:' : '📰 Amharic News:');
+      newsItems.push(language === 'am' ? '📰 የአማርኛ ዜናዎች:' : ' Amharic News:');
       amharicNews.forEach(article => {
         const title = article.title || 'Untitled';
         const url = article.url || '#';
@@ -73,7 +73,7 @@ const ChatInterface = ({ language, onLanguageChange }) => {
 
     // Add English news
     if (englishNews.length > 0) {
-      newsItems.push(language === 'am' ? '📰 የእንግሊዘኛ ዜናዎች:' : '📰 English News:');
+      newsItems.push(language === 'am' ? '📰 የእንግሊዘኛ ዜናዎች:' : ' English News:');
       englishNews.forEach(article => {
         const title = article.title || 'Untitled';
         const url = article.url || '#';
