@@ -19,7 +19,7 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
+#format the gitignore file to commit easily
 # IDE and editor files
 .idea/
 .vscode/
