@@ -14,8 +14,8 @@ const Layout = ({ children }) => {
               className="h-12 w-auto"
             />
             <div className="hidden sm:block">
-              <h1 className="text-xl font-semibold text-gray-800">አማራ ሚዲያ</h1>
-              <p className="text-sm text-gray-600">Amhara Media Corporation</p>
+              <h1 className="text-xl font-semibold text-gray-800">ቻት ቦት</h1>
+              <p className="text-sm text-gray-600">Chat Bot</p>
             </div>
           </div>
         </div>
