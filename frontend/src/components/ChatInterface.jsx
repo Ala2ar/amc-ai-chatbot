@@ -56,7 +56,7 @@ const ChatInterface = ({ language, onLanguageChange }) => {
 
     // Add Amharic news
     if (amharicNews.length > 0) {
-      newsItems.push(language === 'am' ? '📰 የአማርኛ ዜናዎች:' : ' Amharic News:');
+      newsItems.push(language === 'am' ? ' የአማርኛ ዜናዎች:' : ' Amharic News:');
       amharicNews.forEach(article => {
         const title = article.title || 'Untitled';
         const url = article.url || '#';
@@ -73,7 +73,7 @@ const ChatInterface = ({ language, onLanguageChange }) => {
 
     // Add English news
     if (englishNews.length > 0) {
-      newsItems.push(language === 'am' ? '📰 የእንግሊዘኛ ዜናዎች:' : ' English News:');
+      newsItems.push(language === 'am' ? ' የእንግሊዘኛ ዜናዎች:' : ' English News:');
       englishNews.forEach(article => {
         const title = article.title || 'Untitled';
         const url = article.url || '#';
