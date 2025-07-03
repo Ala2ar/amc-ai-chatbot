@@ -8,7 +8,7 @@ def get_amc_info(query_type='all', language='am'):
     """
     amc_info = {
         'am': {
-            'about': """የአማራ ሚዲያ ኮርፖሬሽን (AMC) በአማራ ክልል መንግስት የተቋቋመ የመንግስት ሚዲያ ድርጅት ነው። 
+            'about': """የአማራ ሚዲያ ኮርፖሬሽን (AMECO) በአማራ ክልል መንግስት የተቋቋመ የመንግስት ሚዲያ ድርጅት ነው። 
 ኮርፖሬሽኑ በአማራ ክልል ውስጥ እና ከክልሉ ውጭ ያሉ ህዝቦችን በተለያዩ መድረኮች በመድረስ፣ ትክክለኛ መረጃ በማድረስ እና 
 በመዘዴያዊ መንገድ በማስተላለፍ የህብረተሰቡን እውቀት፣ ግንዛቤ እና ተሳትፎ ለማሳደግ ይሰራል።""",
 
@@ -30,7 +30,7 @@ def get_amc_info(query_type='all', language='am'):
 • ተጠያቂነት"""
         },
         'en': {
-            'about': """Amhara Media Corporation (AMC) is a state-owned media organization established by the Amhara Regional Government. 
+            'about': """Amhara Media Corporation (AMECO) is a state-owned media organization established by the Amhara Regional Government. 
 The corporation works to reach people both within and outside the Amhara region through various platforms, delivering accurate 
 information and methodically transmitting it to enhance public knowledge, awareness, and participation.""",
 
