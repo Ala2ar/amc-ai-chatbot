@@ -6,12 +6,12 @@ def generate_response(question, context_data, language='am'):
     """Simplified response generator without transformers"""
     responses = {
         'en': {
-            'news': 'Latest news from AMC: ...',
+            'news': 'Latest news: ...',
             'schedule': 'Program schedule: ...'
         },
         'am': {
-            'news': 'ከAMC የቅርብ ጊዜ ዜና: ...',
-            'schedule': 'የፕሮግራም ስርጭት ሰንጠረዥ: ...'
+            'news': 'የቅርብ ጊዜ ዜና: ...',
+            'schedule': 'የስርጭት ፕሮግራም  : ...'
         }
     }
     
