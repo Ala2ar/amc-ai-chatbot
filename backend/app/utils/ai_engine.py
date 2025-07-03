@@ -89,4 +89,4 @@ def get_ai_response(question, context, language='am'):
         print(f"Error in AI response: {str(e)}")
         if language == 'am':
             return "ይቅርታ፣ ስህተት ተከስቷል። እባክዎ እንደገና ይሞክሩ።"
-        return f"Sorry, an error occurred: {str(e)}" 
+        return f"Sorry, an error occurred please try again: {str(e)}" 
