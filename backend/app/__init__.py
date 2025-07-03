@@ -16,7 +16,6 @@ def create_app():
     app = Flask(__name__)
     CORS(app)
 
-    # Initialize MongoDB (optional)
     mongo_uri = os.getenv('MONGODB_URI', 'mongodb://localhost:27017/')
     try:
         app.db = Database(mongo_uri)
@@ -25,9 +24,9 @@ def create_app():
         logger.warning(f"MongoDB not available, running without database: {str(e)}")
         app.db = None
 
-    # Initialize scraper
+    
     app.scraper = AMCScraper()
-    logger.info("AMC scraper initialized")
+    logger.info("Data scraper initialized")
 
     # Import and register blueprints
     from .routes import main
