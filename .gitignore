@@ -14,7 +14,7 @@ node_modules/
 /frontend/build/
 /frontend/dist/
 /backend/dist/
-
+# add and update git ignore data to ignore the whole file and commit only the specified changes of line of code
 # Debug logs
 npm-debug.log*
 yarn-debug.log*
